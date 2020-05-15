@@ -27,11 +27,8 @@ public Usuario validaUsuario(Usuario usuario){
 		
 		if(rs.next()){
 			login= new Usuario();
-			login.setId(rs.getInt("id"));
-			login.setUsuario(rs.getString("usuario"));
-			login.setSenha(rs.getString("senha"));
-			System.out.println(login.getSenha());
 			
+			login.setId(rs.getInt("id"));
 		}
 			
 		}catch (SQLException e){
