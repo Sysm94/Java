@@ -1,0 +1,26 @@
+body {
+  margin-top:100px;
+  background: -webkit-gradient(linear, left top, right top, from(#121313ed), to(#7da0c3));
+  background: -moz-linear-gradient(left, #CCCCCC, #000000);
+}
+
+.btn{
+   padding:9px; 
+   margin:auto;
+   border-radius:10px;
+   font-weight: bold;
+   font-size:18px;
+   background-color:#1abc9c;
+  
+}
+
+.btn:hover{
+	border:1px solid #000000c7;
+	border-radius:10px;	
+	border-radius: 10px;
+    box-shadow: 1px 1px 1px 2px #0c6d58;
+}
+
+
+
+
