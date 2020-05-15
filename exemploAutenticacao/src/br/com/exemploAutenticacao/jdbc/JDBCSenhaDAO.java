@@ -14,8 +14,7 @@ private Connection conexao;
 		this.conexao = conexao;		
 	}
 
-public Usuario validaUsuario(Usuario usuario){
-		
+public Usuario validaUsuario(Usuario usuario){		
 				
 		String comando = "select id,usuario,senha from usuario where usuario='"+usuario.getUsuario()+"' and senha='"+usuario.getSenha()+"'";
 		Usuario login = null;
@@ -26,16 +25,16 @@ public Usuario validaUsuario(Usuario usuario){
 		
 		
 		if(rs.next()){
-			login= new Usuario();
-			
-			login.setId(rs.getInt("id"));
+			login= new Usuario();			
+			login.setId(rs.getInt("id"));		
+			login.setUsuario(rs.getString("usuario"));
+			login.setSenha(rs.getString("senha"));
 		}
 			
 		}catch (SQLException e){
 			e.printStackTrace();			
-			
-			
-		}		
+		}	
+	
 		return login;	
 	}
 }
